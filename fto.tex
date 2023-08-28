@@ -1,0 +1,220 @@
+%-------------------------
+% Resume in Latex
+% Author : Andrew Fandrianto
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeMonoSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeDoubleSubheading}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://g.co/kgs/DsNwjE}{\Large Andrew Fandrianto}} & \href{mailto:andrew@fto.xyz}{andrew@fto.xyz}\\
+  {A full stack ML engineer and people manager} & {\href{https://github.com/laundry}{github.com/laundry}, \href{tel:+14124555404}{+1-412-455-5404}} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeDoubleSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Master of Language Technologies}{2013}
+      {Bachelor of Science in Computer Science}{2011}
+    \resumeMonoSubheading
+      {The Harker School}{San Jose, CA}
+  \resumeSubHeadingListEnd
+
+
+%-----------Skills-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{People}
+      {Technical Lead Manager for 2+ years. Mentored 20+.}
+    \resumeSubItem{Computer Languages}
+      {Python, Shell, *SQL.}
+    \resumeSubItem{Dusty Computer Languages}
+      {C++, Golang, Java, Scala, Jsonnet, Borgcfg, C, Javascript, C\#, R, Matlab.}
+    \resumeSubItem{Homosapien Languages}
+      {Conversant in Indonesian.}
+    \resumeSubItem{Things}
+      {MapReduce++, Jupyter, pandas/sklearn/etc, TensorFlow, Superset, Presto/Trino, Docker, IntelliJ*, AWS, Git, Vim.}
+    \resumeSubItem{Dusty Things}
+      {PyTorch, JAX, AppEngine, Perforce, Eclipse, Maven, Postgres, Kubernetes, Hadoop, Argo, Jenkins, Airflow.}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeDoubleSubheading
+      {Apple}{Cupertino, CA}
+      {Machine Learning Engineering Manager, AIML}{2021-present}
+      {Machine Learning Engineer, AIML}{2019-2021}
+      \resumeItemListStart
+        \resumeItem{Applied machine learning with external impact}
+          {
+              \newline Led and contributed to search quality projects for Siri, Safari, and Spotlight.
+          }
+          \resumeItemListStart
+            \resumeItem{User Feedback}
+            {Team and I built a comprehensive, debuggable framework to leverage user feedback.
+                \newline Improved quality of 7+ domains through 20+ statistically significant launches, about half requiring ML.
+                \newline Directly handled a majority of the end-to-end process: \{privacy review, device ground truth testing, backend migrations, data pipelines, server models, on-device models, eval, debug, launch, landing, metrics, monitoring, automation\}.
+            }
+            \vspace{4pt}
+            \resumeItem{Web Answers}{E.g. [why is the ocean blue]. Improved Web Answers coverage by +xx\% relative with models, classic and dense retrieval, query sampling, and practical hacks.}
+          \resumeItemListEnd
+          \vspace{4pt}
+        \resumeItem{Built a team and helped grow the organization}
+          {Concurrently managing 7 (max 10) individual contributors. Directly hired 10. Built and ramped a new team from scratch.}
+      \resumeItemListEnd
+      
+    \resumeDoubleSubheading
+      {Google}{Mountain View, CA}
+      {Software Engineer, Search Quality}{2018-2019}
+      {Software Engineer, Research}{2014-2018}
+      \resumeItemListStart
+        \resumeItem{Applied machine learning with external impact}
+          {
+              \newline Led and/or contributed to projects for Search, Google Play, and the TensorFlow ecosystem \{ops, TensorBoard\}.
+              \newline Typically handled these pieces: \{data, model, eval, debug, launch, landing\}.
+          }
+          \resumeItemListStart
+            \resumeItem{Related Answers}{E.g. [why does reading on a train make me sleepy]. Text modeling for snippet ranking with BERT++. Led subgroup, mentored incoming engineers, improved xx\% of Google Search and Assistant traffic.}
+            \resumeItem{Short Answers}{E.g. [what is the most abundant gas in venus]. Started cross functional effort between research and product engineering, jointly led subgroup, improved x\% of Google Search and Assistant traffic.}
+            \resumeItem{Play Store Search}{Image modeling for app search quality with ImageNet++. Generated +\$xxM revenue.}
+          \resumeItemListEnd
+          \vspace{4pt}
+        \resumeItem{Owned datasets for internal/external machine learning research (n*100GB-m*1PB)}
+          {\href{https://github.com/google-research-datasets/wiki-reading}{github.com/google-research-datasets/wiki-reading}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {eBay}{San Jose, CA}
+      {Software Engineer}{2013-2014}
+      
+    \resumeSubheading
+      {Language Technologies Institute at CMU}{Pittsburgh, PA}
+      {Graduate Research Assistant}{2011-2013}
+      
+    \resumeDoubleSubheading
+      {Microsoft}{Mountain View, CA}
+      {Software Development Engineer Intern}{Summer 2011}
+      {Software Development Engineer Intern}{Summer 2010}
+      
+    \resumeSubheading
+      {ITA Software (acquired by Google)}{Boston, MA}
+      {User Interface Engineering Intern}{Summer 2009}
+      
+    \resumeSubheading
+      {UC Berkeley Bioengineering, Professor Dan Fletcher}{Berkeley, CA}
+      {Researcher @ Berkeley Bioengineering Summer Research Program}{Summer 2008}
+      
+    \resumeSubheading
+      {Cisco Systems}{San Jose, CA}
+      {Software Developer Intern}{Summer 2006}
+      
+  \resumeSubHeadingListEnd
+
+\end{document}
