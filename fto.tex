@@ -50,7 +50,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \underline{#1}{: #2 \vspace{-2pt}}
   }
 }
 
@@ -110,38 +110,9 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://g.co/kgs/DsNwjE}{\Large Andrew Fandrianto}} & \href{mailto:andrew@fto.xyz}{andrew@fto.xyz}\\
-  {A full stack ML engineer and people manager} & {\href{https://github.com/laundry}{github.com/laundry}, \href{tel:+14124555404}{+1-412-455-5404}} \\
+  {Full Stack ML Engineer \& ``Engineer's'' People Manager} & {\href{https://github.com/laundry}{github.com/laundry}, \href{tel:+14124555404}{+1-412-455-5404}} \\
 \end{tabular*}
 
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeDoubleSubheading
-      {Carnegie Mellon University}{Pittsburgh, PA}
-      {Master of Language Technologies}{2013}
-      {Bachelor of Science in Computer Science}{2011}
-    \resumeMonoSubheading
-      {The Harker School}{San Jose, CA}
-  \resumeSubHeadingListEnd
-
-
-%-----------Skills-----------------
-\section{Skills}
-  \resumeSubHeadingListStart
-    \resumeSubItem{People}
-      {Technical Lead Manager for 2+ years. Mentored 20+.}
-    \resumeSubItem{Computer Languages}
-      {Python, Shell, *SQL.}
-    \resumeSubItem{Dusty Computer Languages}
-      {C++, Golang, Java, Scala, Jsonnet, Borgcfg, C, Javascript, C\#, R, Matlab.}
-    \resumeSubItem{Homosapien Languages}
-      {Conversant in Indonesian.}
-    \resumeSubItem{Things}
-      {MapReduce++, Jupyter, pandas/sklearn/etc, TensorFlow, Superset, Presto/Trino, Docker, IntelliJ*, AWS, Git, Vim.}
-    \resumeSubItem{Dusty Things}
-      {PyTorch, JAX, AppEngine, Perforce, Eclipse, Maven, Postgres, Kubernetes, Hadoop, Argo, Jenkins, Airflow.}
-  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -154,20 +125,22 @@
       \resumeItemListStart
         \resumeItem{Applied machine learning with external impact}
           {
-              \newline Led and contributed to search quality projects for Siri, Safari, and Spotlight.
+              \newline \textbf{Impact}: Improved quality of 7+ domains through 30+ statistically significant launches, about half requiring ML.
+              Led and contributed to search quality projects for Siri, Safari, and Spotlight.
+              \newline \textbf{Scope}: Directly handled a majority of the end-to-end process: \{ideation, privacy review, team management, xfunc collaboration/pitching, goal setting, device ground truth testing, backend migrations, data pipelines, server models, on-device models, eval, debug, launch, landing, metrics, monitoring, automation, postmortems\}.
           }
           \resumeItemListStart
             \resumeItem{User Feedback}
-            {Team and I built a comprehensive, debuggable framework to leverage user feedback.
-                \newline Improved quality of 7+ domains through 20+ statistically significant launches, about half requiring ML.
-                \newline Directly handled a majority of the end-to-end process: \{privacy review, device ground truth testing, backend migrations, data pipelines, server models, on-device models, eval, debug, launch, landing, metrics, monitoring, automation\}.
+            {
+                Team and I built a comprehensive, debuggable framework to leverage user feedback. This framework is used by 10+ projects including our team directly and xfunc collaborators.
             }
             \vspace{4pt}
             \resumeItem{Web Answers}{E.g. [why is the ocean blue]. Improved Web Answers coverage by +xx\% relative with models, classic and dense retrieval, query sampling, and practical hacks.}
           \resumeItemListEnd
           \vspace{4pt}
         \resumeItem{Built a team and helped grow the organization}
-          {Concurrently managing 7 (max 10) individual contributors. Directly hired 10. Built and ramped a new team from scratch.}
+          {
+              Concurrently managing 7 (max 10) individual contributors. Directly hired 10+. Built and ramped a new team from scratch.}
       \resumeItemListEnd
       
     \resumeDoubleSubheading
@@ -177,8 +150,8 @@
       \resumeItemListStart
         \resumeItem{Applied machine learning with external impact}
           {
-              \newline Led and/or contributed to projects for Search, Google Play, and the TensorFlow ecosystem \{ops, TensorBoard\}.
-              \newline Typically handled these pieces: \{data, model, eval, debug, launch, landing\}.
+              \newline \textbf{Impact}: Led and/or contributed to projects for Search, Google Play, and the TensorFlow ecosystem \{ops, TensorBoard\}.
+              \newline \textbf{Scope}: Typically handled these pieces: \{data, model, eval, debug, launch, landing\}.
           }
           \resumeItemListStart
             \resumeItem{Related Answers}{E.g. [why does reading on a train make me sleepy]. Text modeling for snippet ranking with BERT++. Led subgroup, mentored incoming engineers, improved xx\% of Google Search and Assistant traffic.}
@@ -186,8 +159,12 @@
             \resumeItem{Play Store Search}{Image modeling for app search quality with ImageNet++. Generated +\$xxM revenue.}
           \resumeItemListEnd
           \vspace{4pt}
-        \resumeItem{Owned datasets for internal/external machine learning research (n*100GB-m*1PB)}
-          {\href{https://github.com/google-research-datasets/wiki-reading}{github.com/google-research-datasets/wiki-reading}}
+        \resumeItem{Kaggle, but in Google}
+          {
+              \newline 2nd engineer for frontend/backend for our internal Kaggle website on Flex AppEngine, used by 20+ teams.
+              \newline Owned datasets for internal/external machine learning research (n*100GB-m*1PB)
+              \href{https://github.com/google-research-datasets/wiki-reading}{github.com/google-research-datasets/wiki-reading}
+          }
       \resumeItemListEnd
 
     \resumeSubheading
@@ -216,5 +193,36 @@
       {Software Developer Intern}{Summer 2006}
       
   \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeDoubleSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Master of Language Technologies}{2013}
+      {Bachelor of Science in Computer Science}{2011}
+    \resumeMonoSubheading
+      {The Harker School}{San Jose, CA}
+  \resumeSubHeadingListEnd
+
+%-----------Skills-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{People}
+      {Technical Lead Manager for 2+ years. Mentored 20+.}
+    \resumeSubItem{Computer Languages}
+      {Python, Shell, *SQL.}
+    \resumeSubItem{Dusty Computer Languages}
+      {C++, Golang, Java, Scala, Jsonnet, Borgcfg, C, Javascript, C\#, R, Matlab.}
+    \resumeSubItem{Homosapien Languages}
+      {Conversant in Indonesian.}
+    \resumeSubItem{Things}
+      {MapReduce++, Jupyter, pandas/sklearn/etc, TensorFlow, Superset, Presto/Trino, Docker, IntelliJ*, AWS, Git, Vim.}
+    \resumeSubItem{Dusty Things}
+      {PyTorch, JAX, AppEngine, Perforce, Eclipse, Maven, Postgres, Kubernetes, Hadoop, Argo, Jenkins, Airflow.}
+  \resumeSubHeadingListEnd
+
+
+
 
 \end{document}
