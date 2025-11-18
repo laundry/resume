@@ -1,5 +1,5 @@
-# Archieve
-Archieve/
+# Archive
+Archive/
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
@@ -14,3 +14,7 @@ Archieve/
 *.cb
 *.cb2
 .*.lb
+*.synctex.gz
+*.bbl
+*.blg
+*.fdb_latexmk
